@@ -1,0 +1,43 @@
+/* Reset some default styles to ensure consistent behavior across browsers */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the container to arrange its children */
+.container {
+    display: flex;
+    height: 100vh; /* Adjust this value to suit your layout requirements */
+}
+
+/* Styles for the left sidebar */
+.leftsidebar {
+    flex: 0 0 auto; /* The sidebar will not grow or shrink; it has a fixed width */
+    width: 200px; /* Adjust this width as needed */
+    background-color: #f0f0f0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Styles for the right sidebar */
+.rightside {
+    flex: 0 0 auto; /* The sidebar will not grow or shrink; it has a fixed width */
+    width: 200px; /* Adjust this width as needed */
+    background-color: #f0f0f0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Styles for the middle content */
+.middle {
+    /* flex: 1; The middle content will take up the remaining space */
+    /* padding: 20px; Add some padding to make it look nicer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; /* Enable vertical scrolling for the middle content */
+}
